@@ -1,0 +1,87 @@
+body {
+  background-color: turquoise;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@keyframes threeDotsCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.upBox {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: threeDotsCircle 2s ease-in-out infinite;
+  margin-top: 100px;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 12px;
+}
+
+.square {
+  height: 60px;
+  width: 10px;
+  margin: 3px;
+  background-color: white;
+}
+
+.btBigBox {
+  display: flex;
+}
+@keyframes fiveBoxScaleup {
+  0% {
+    transform: scaleY(0.4);
+  }
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(0.4);
+  }
+  100% {
+    transform: scaleY(0.4);
+  }
+}
+.a {
+  animation: fiveBoxScaleup 1s ease-in-out infinite;
+}
+.b {
+  animation: fiveBoxScaleup 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+.c {
+  animation: fiveBoxScaleup 1s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+.d {
+  animation: fiveBoxScaleup 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+.e {
+  animation: fiveBoxScaleup 1s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
