@@ -6,10 +6,18 @@
 /* Components */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
 
 /* Screens*/
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
   font-family: "Open Sans", sans-serif;
+  color: #2e363e;
+}
+.main-screen {
+  padding: 0 var(--horizental-space);
 }

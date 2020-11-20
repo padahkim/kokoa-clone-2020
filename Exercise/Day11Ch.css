@@ -144,6 +144,8 @@ i {
 .other__stars{
 color: #ffce33;
 size: 5px;
+transform: scale(0.7)
+
 }
 
 
