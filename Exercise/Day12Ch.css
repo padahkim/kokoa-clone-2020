@@ -146,6 +146,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .play-bar__column__btn i {
