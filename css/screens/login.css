@@ -14,38 +14,40 @@
   opacity: 0.7;
 }
 
-#Login-form {
+#login-form {
   display: flex;
   flex-direction: column;
   margin: 0px 30px;
 }
 
-#Login-form input {
+#login-form input {
   border: none;
-  font-size: 18px;
   padding: 15px 0px;
-
+  font-size: 18px;
   margin-bottom: 25px;
 }
-#Login-form input:not([type="submit"]) {
+
+#login-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: border-color.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
-#Login-form input[type="submit"] {
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
   background-color: var(--yellow);
   cursor: pointer;
   padding: 20px 0px;
   border-radius: 5px;
 }
 
-attribute selector [type="value"] #Login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
-#Login-form input:focus {
-  border-color: var(--yellow);
-}
-
-#Login-form a {
+#login-form a {
   text-align: center;
   text-decoration: none;
   color: inherit;
